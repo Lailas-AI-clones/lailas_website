@@ -1,0 +1,87 @@
+site_name: Lailas AI
+site_description: Web-site for Lailas AI
+site_url: https://lailas.ai
+
+nav:
+  - Home:
+    - About Lailas AI: index.md
+  - Contact us: contact_us/index.md
+
+
+theme:
+  name: material
+  features:
+    - search.suggest
+    - toc.integrate
+    - navigation.tabs
+    - navigation.expand
+    - navigation.sections
+    - navigation.instant
+    - navigation.instant.prefetch
+    - content.tooltips
+    - content.tabs.link
+    - content.code.copy
+    - navigation.footer
+  language: en
+  palette:
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: custom
+      accent: custom
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: custom
+      accent: custom
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: material/slash-forward-box
+  favicon: assets/favicon.png
+
+extra:
+  generator: false
+  analytics:
+    # provider: google
+    # property: G-W9Y130NXVZ
+
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/hero.css
+plugins:
+  - search
+  - social:
+      cards_layout_options:
+        background_color: "#111111"
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.critic
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - def_list
+  - pymdownx.keys
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js
+
+extra_files:
+  - docs/robots.txt
+
+copyright: |
+  &copy; 2026 Lailas AI Ltd. All rights reserved.
